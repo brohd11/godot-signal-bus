@@ -8,6 +8,9 @@ const PE_STRIP_CAST_SCRIPT = preload("res://addons/_lib/signal_bus/src/signal_bu
 static func get_singleton_name() -> String:
 	return "SignalBusSingleton"
 
+static func _get_singleton_node_path() -> String:
+	return RUNTIME_NODE_PATH
+
 static func get_instance() -> SignalBusSingleton:
 	return _get_instance(PE_STRIP_CAST_SCRIPT)
 
