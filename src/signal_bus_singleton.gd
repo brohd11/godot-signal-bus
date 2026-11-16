@@ -1,8 +1,9 @@
-class_name SignalBusSingleton #! singleton-module
+class_name SignalBusSingleton
 extends "res://addons/_lib/singleton/src/singleton_base.gd" #! ext Singletons.Base
 
 const SignalBus = preload("res://addons/_lib/signal_bus/src/signal_bus.gd")
 
+#! gdp-strip-cast PE_STRIP_CAST_SCRIPT
 const PE_STRIP_CAST_SCRIPT = preload("res://addons/_lib/signal_bus/src/signal_bus_singleton.gd")
 
 static func get_singleton_name() -> String:
